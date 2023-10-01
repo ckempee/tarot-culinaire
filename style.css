@@ -1,5 +1,6 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@600&family=Playfair+Display&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 body {
     background-image: url(./images/font2.jpg);
@@ -13,8 +14,8 @@ body {
 .navbar nav{
         width: 100%;
         display: flex; /* Utilisation de Flexbox pour aligner le contenu horizontalement */
-        align-items: center; /* Aligner les éléments verticalement au centre si nécessaire */
-        justify-content: space-between; /* Espace égal entre le logo et les liens de navigation */
+        align-items:center; /* Aligner les éléments verticalement au centre si nécessaire */
+        justify-content: flex-end;
         padding: 10px 20px;
         overflow: hidden;
        
@@ -22,6 +23,8 @@ body {
 
 .navbar a{
     text-decoration: none;
+    color: black;
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -40,12 +43,16 @@ body {
     max-width: 50px;
     margin-right:40px;
 }
+
+.active{
+    border-bottom: 4px solid #d97c5c;
+}
   
 .images{
     width: 35%;
-    height: 650px;
+    height: 620px;
     margin-left:70px;
-    margin-right: 20px; 
+    margin-right: 50px; 
     float: left;
     position: relative;
    
@@ -67,7 +74,7 @@ body {
     width: 100%;
     height:550px;
     border-radius: 50% 75% 50% 70%;
-    background-color: #d97c5c;
+    background-color: #efcba3;
     position: absolute;
     z-index: 0;
     margin-top:55px;
@@ -79,26 +86,61 @@ body {
     
     float: left;
     width: 45%;
-    margin-top:150px;
+    margin-top:125px;
     padding: 20px;
+    text-align: center;
 }
 
 .titre h1{
     
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif NP Hmong', serif;
+font-family: 'Playfair Display', serif;
     font-size: 7rem;
-    margin:0;
+    margin:20px 0;
     font-weight: bolder;
 }
 
-.titre h2{
+.orange-text{
+    color: #d97c5c;
+}
+
+/* je met le culinaire en h1 ou en h2 pour le centrer???*/
+/* .titre h2{
     color: #d97c5c;
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     margin: 0;
-    font-weight: bold;}
+    font-weight: bold;
+} */
 
 .titre h3 {
     font-family: 'Playfair Display', serif;
     font-size: 2.1rem;
+}
+
+.scroll {
+    position:absolute;
+    bottom: 4px;
+    right:40%;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    margin:auto;
+}
+
+i{
+    color: #d97c5c;
+    font-size:4rem !important;
+}
+.principale{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    
+}
+
+.tirage{
+    width: 100%;
+    height: 800px;
+    background-color: red;
 }
